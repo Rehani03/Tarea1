@@ -45,10 +45,14 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarea1\Aritmetica.cs" />
     <Compile Include="Tarea1\ConversorMoneda.cs" />
     <Compile Include="Tarea1\ConversorTemperaturaGrados.cs" />
+    <Compile Include="Tarea1\DiadeSemana.cs" />
     <Compile Include="Tarea1\ImprimirNombres.cs" />
+    <Compile Include="Tarea1\ImpuestoProducto.cs" />
     <Compile Include="Tarea1\PerimetroRegular.cs" />
+    <Compile Include="Tarea1\PoligonosRegulares.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

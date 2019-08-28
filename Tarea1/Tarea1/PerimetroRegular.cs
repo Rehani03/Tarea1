@@ -19,7 +19,7 @@ namespace Tarea1.Tarea1
                 Console.WriteLine("Numero de Lados:");
                 ladoS = Console.ReadLine();
                 numLados = Convert.ToInt32(ladoS);
-                Console.WriteLine("Tamano de Lados:");
+                Console.WriteLine("Tamaño de Lados:");
                 longS = Console.ReadLine();
                 longitudLado = Convert.ToDouble(longS);
 
