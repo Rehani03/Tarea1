@@ -53,6 +53,14 @@
     <Compile Include="Tarea1\ImpuestoProducto.cs" />
     <Compile Include="Tarea1\PerimetroRegular.cs" />
     <Compile Include="Tarea1\PoligonosRegulares.cs" />
+    <Compile Include="Tarea2\AgendaHash.cs" />
+    <Compile Include="Tarea2\ArregloDeEstudianteJagged.cs" />
+    <Compile Include="Tarea2\CadenasEnOrden.cs" />
+    <Compile Include="Tarea2\DeNumeroALetras.cs" />
+    <Compile Include="Tarea2\DiccionarioPalabras.cs" />
+    <Compile Include="Tarea2\Factorial.cs" />
+    <Compile Include="Tarea2\FormatoFecha.cs" />
+    <Compile Include="Tarea2\PromedioArrayList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

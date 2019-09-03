@@ -4,30 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tarea1
+namespace Tareas
 {
     class Program
     {
         static void Main(string[] args)
         {
-            menu();
+            MenuTarea2();
         }
 
-        private static void menu()
+        private static void MenuTarea1()
         {
                 int opcion, opcionMoneda, opcionCondicion, opcionCiclo;
                 string dato, datoMoneda, datoCondicion, datoCiclo;
                 int opcionMenuInicial;
                 string datoMenuInicial;
 
-                Tarea1.ImprimirNombres oraciones = new Tarea1.ImprimirNombres();
-                Tarea1.ConversorTemperaturaGrados t = new Tarea1.ConversorTemperaturaGrados();
-                Tarea1.ConversorMoneda moneda = new Tarea1.ConversorMoneda();
-                Tarea1.PerimetroRegular perimetro = new Tarea1.PerimetroRegular();
-                Tarea1.Aritmetica aritmetica = new Tarea1.Aritmetica();
-                Tarea1.ImpuestoProducto impuesto = new Tarea1.ImpuestoProducto();
-                Tarea1.DiadeSemana semana = new Tarea1.DiadeSemana();
-                Tarea1.PoligonosRegulares poligonos = new Tarea1.PoligonosRegulares();
+                Tareas.Tarea1.ImprimirNombres oraciones = new Tareas.Tarea1.ImprimirNombres();
+                Tareas.Tarea1.ConversorTemperaturaGrados t = new Tareas.Tarea1.ConversorTemperaturaGrados();
+                Tareas.Tarea1.ConversorMoneda moneda = new Tareas.Tarea1.ConversorMoneda();
+                Tareas.Tarea1.PerimetroRegular perimetro = new Tareas.Tarea1.PerimetroRegular();
+                Tareas.Tarea1.Aritmetica aritmetica = new Tareas.Tarea1.Aritmetica();
+                Tareas.Tarea1.ImpuestoProducto impuesto = new Tareas.Tarea1.ImpuestoProducto();
+                Tareas.Tarea1.DiadeSemana semana = new Tareas.Tarea1.DiadeSemana();
+                Tareas.Tarea1.PoligonosRegulares poligonos = new Tareas.Tarea1.PoligonosRegulares();
 
                 do
                 {
@@ -185,6 +185,112 @@ namespace Tarea1
                     }
                 }
                 while (opcionMenuInicial != 5);
+        }
+
+        private static void MenuTarea2()
+        {
+           int opcion=0, numero;
+           const int PROMEDIO = 1, MAYOR = 2, MENOR = 3, JAGGED = 4;
+
+            Tareas.Tarea2.Factorial factorialNumero = new Tareas.Tarea2.Factorial();
+            Tareas.Tarea2.DeNumeroALetras convertir = new Tareas.Tarea2.DeNumeroALetras();
+            Tareas.Tarea2.ArregloDeEstudianteJagged arreglosEstudiante = new Tareas.Tarea2.ArregloDeEstudianteJagged();
+            Tareas.Tarea2.PromedioArrayList promedio = new Tareas.Tarea2.PromedioArrayList();
+            Tareas.Tarea2.DiccionarioPalabras diccionario = new Tareas.Tarea2.DiccionarioPalabras();
+            Tareas.Tarea2.AgendaHash agendaNueva = new Tareas.Tarea2.AgendaHash();
+            Tareas.Tarea2.FormatoFecha fecha = new Tareas.Tarea2.FormatoFecha();
+            Tareas.Tarea2.CadenasEnOrden ordenCadena = new Tareas.Tarea2.CadenasEnOrden();
+
+            do
+            {
+                try
+                {
+
+
+                    Console.Clear();
+
+                    Console.WriteLine("                     Programacion Aplicada I");
+                    Console.WriteLine("                           Tarea 2");
+                    Console.WriteLine("                    Rehani Cordero 2017-0302\n\n");
+                    Console.WriteLine("1. Calcular Factorial de un numero");
+                    Console.WriteLine("2. Ingresar un numero en digitos e imprimirlo en letras");
+                    Console.WriteLine("3. Calcular Promedio de arreglo Jagged");
+                    Console.WriteLine("4. Calcular Mayor Calificacion de arreglo Jagged");
+                    Console.WriteLine("5. Calcular Menor Calificacion de arreglo Jagged");
+                    Console.WriteLine("6. Programa que pasa un arreglo Jagged a una funcion");
+                    Console.WriteLine("7. Calcular Promedio de Calificaciones de un Salon de Clase en ArrayList");
+                    Console.WriteLine("8. Diccionario de Palabras en HashTable");
+                    Console.WriteLine("9. Agenda de Contactos en HashTable");
+                    Console.WriteLine("10.Programa que muestra la fecha y hora en formato AM/PM");
+                    Console.WriteLine("11.Programa que muestra dos cadenas en orden alfabetico");
+                    Console.WriteLine("12. Salir");
+                    Console.Write("Opcion:");
+                    opcion = Convert.ToInt32(Console.ReadLine());
+
+                    switch (opcion)
+                    {
+                        case 1:
+                            Console.Clear();
+                            Console.Write("Ingrese un numero:");
+                            numero = Convert.ToInt32(Console.ReadLine());
+                            factorialNumero.calcularFactorial(numero);
+                            break;
+                        case 2:
+                            Console.Clear();
+                            Console.Write("Ingrese el numero a convertir:");
+                            numero = Convert.ToInt32(Console.ReadLine());
+                            convertir.ConvertirNumeros(numero);
+                            Console.ReadKey();
+                            break;
+                        case 3:
+                            Console.Clear();
+                            arreglosEstudiante.ComienzoDeEstudiantes(PROMEDIO);
+                            break;
+                        case 4:
+                            Console.Clear();
+                            arreglosEstudiante.ComienzoDeEstudiantes(MAYOR);
+                            break;
+                        case 5:
+                            Console.Clear();
+                            arreglosEstudiante.ComienzoDeEstudiantes(MENOR);
+                            break;
+                        case 6:
+                            Console.Clear();
+                            arreglosEstudiante.ComienzoDeEstudiantes(JAGGED);
+                            break;
+                        case 7:
+                            promedio.CalcularPromedioArrayList();
+                            break;
+                        case 8:
+                            diccionario.DiccionarioHash();
+                            break;
+                        case 9:
+                            agendaNueva.agenda();
+                            break;
+                        case 10:
+                            fecha.MostrarFechaHora();
+                            break;
+                        case 11:
+                            ordenCadena.MostrarCadenas();
+                            break;
+                        case 12:
+                            Environment.Exit(1);
+                            break;
+
+                        default:
+                            Console.WriteLine("Esta opcion no existe");
+                            Console.ReadKey();
+                            break;
+                    }
+                }
+                catch (Exception error)
+                {
+                    Console.WriteLine("Error " + error);
+                    Console.ReadKey();
+                }
+            }
+            while (opcion != 12);
+        
         }
     }
 }

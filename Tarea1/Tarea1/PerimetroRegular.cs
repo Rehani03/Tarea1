@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tarea1.Tarea1
+namespace Tareas.Tarea1
 {
     public class PerimetroRegular
     {
