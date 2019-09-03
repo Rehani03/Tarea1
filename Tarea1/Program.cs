@@ -11,6 +11,7 @@ namespace Tareas
         static void Main(string[] args)
         {
             MenuTarea2();
+            
         }
 
         private static void MenuTarea1()
