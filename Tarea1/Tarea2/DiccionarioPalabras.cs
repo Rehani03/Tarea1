@@ -19,14 +19,14 @@ namespace Tareas.Tarea2
 
             try
             {
-                Console.WriteLine("Ingrese la cantidad de palabras que quiere guardar");
+                Console.WriteLine("Ingresé la cantidad de palabras que quiere guardar");
                 cantidad = Convert.ToInt32(Console.ReadLine());
 
                 for(int i = 0; i<cantidad; i++)
                 {
-                    Console.Write("Ingrese la palabra " + (i+1) +":");
+                    Console.Write("Ingresé la palabra " + (i+1) +":");
                     clave = Console.ReadLine();
-                    Console.Write("Ingrese la definicion de la palabra " + (i + 1) + ":");
+                    Console.Write("Ingresé la definición de la palabra " + (i + 1) + ":");
                     definicion = Console.ReadLine();
                     tabla.Add(clave, definicion);
                 }

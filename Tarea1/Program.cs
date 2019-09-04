@@ -210,20 +210,20 @@ namespace Tareas
 
                     Console.Clear();
 
-                    Console.WriteLine("                     Programacion Aplicada I");
+                    Console.WriteLine("                     Programación Aplicada I");
                     Console.WriteLine("                           Tarea 2");
                     Console.WriteLine("                    Rehani Cordero 2017-0302\n\n");
-                    Console.WriteLine("1. Calcular Factorial de un numero");
-                    Console.WriteLine("2. Ingresar un numero en digitos e imprimirlo en letras");
-                    Console.WriteLine("3. Calcular Promedio de arreglo Jagged");
-                    Console.WriteLine("4. Calcular Mayor Calificacion de arreglo Jagged");
-                    Console.WriteLine("5. Calcular Menor Calificacion de arreglo Jagged");
-                    Console.WriteLine("6. Programa que pasa un arreglo Jagged a una funcion");
-                    Console.WriteLine("7. Calcular Promedio de Calificaciones de un Salon de Clase en ArrayList");
-                    Console.WriteLine("8. Diccionario de Palabras en HashTable");
-                    Console.WriteLine("9. Agenda de Contactos en HashTable");
-                    Console.WriteLine("10.Programa que muestra la fecha y hora en formato AM/PM");
-                    Console.WriteLine("11.Programa que muestra dos cadenas en orden alfabetico");
+                    Console.WriteLine("1. Calcular Factorial de un número.");
+                    Console.WriteLine("2. Ingresar un número en dìgitos e imprimirlo en letras.");
+                    Console.WriteLine("3. Calcular promedio de arreglo Jagged.");
+                    Console.WriteLine("4. Calcular mayor calificación de arreglo Jagged.");
+                    Console.WriteLine("5. Calcular Menor calificación de arreglo Jagged.");
+                    Console.WriteLine("6. Programa que pasa un arreglo Jagged a una función.");
+                    Console.WriteLine("7. Calcular promedio de calificaciones de un salón de clase en ArrayList.");
+                    Console.WriteLine("8. Diccionario de palabras en HashTable.");
+                    Console.WriteLine("9. Agenda de contactos en HashTable.");
+                    Console.WriteLine("10.Programa que muestra la fecha y hora en formato AM/PM.");
+                    Console.WriteLine("11.Programa que muestra dos cadenas en orden alfabético.");
                     Console.WriteLine("12. Salir");
                     Console.Write("Opcion:");
                     opcion = Convert.ToInt32(Console.ReadLine());
@@ -232,13 +232,13 @@ namespace Tareas
                     {
                         case 1:
                             Console.Clear();
-                            Console.Write("Ingrese un numero:");
+                            Console.Write("Ingresé un número:");
                             numero = Convert.ToInt32(Console.ReadLine());
                             factorialNumero.calcularFactorial(numero);
                             break;
                         case 2:
                             Console.Clear();
-                            Console.Write("Ingrese el numero a convertir:");
+                            Console.Write("Ingresé el número a convertir:");
                             numero = Convert.ToInt32(Console.ReadLine());
                             convertir.ConvertirNumeros(numero);
                             Console.ReadKey();
@@ -279,7 +279,7 @@ namespace Tareas
                             break;
 
                         default:
-                            Console.WriteLine("Esta opcion no existe");
+                            Console.WriteLine("Esta opción no existe.");
                             Console.ReadKey();
                             break;
                     }

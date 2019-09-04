@@ -23,7 +23,7 @@ namespace Tareas.Tarea2
                 //aqui se toman las calificaciones
                 while (salida != -1)
                 {
-                    Console.Write("\nIngrese la Calificacion {0}:", cont + 1, ":");
+                    Console.Write("\nIngresé la calificación {0}:", cont + 1, ":");
                     calificacion = Convert.ToSingle(Console.ReadLine());
 
                     calificaciones.Add(calificacion);
@@ -32,7 +32,7 @@ namespace Tareas.Tarea2
                         maxima = calificacion;
                     if (calificacion < minima)
                         minima = calificacion;
-                    Console.WriteLine("Para terminar el programa ingrese -1 \n\n");
+                    Console.WriteLine("Para terminar el programa ingresé -1 \n\n");
                     salida = Convert.ToInt32(Console.ReadLine());
                     cont++;
 
@@ -44,8 +44,8 @@ namespace Tareas.Tarea2
                 }
 
                 Console.WriteLine("El promedio de calificaciones es:" + (Math.Round(promedio / calificaciones.Count, 2)));
-                Console.WriteLine("La calificacion mas alta es:" + maxima);
-                Console.WriteLine("La calificacion mas baja es:" + minima);
+                Console.WriteLine("La calificación mas alta es:" + maxima);
+                Console.WriteLine("La calificación mas baja es:" + minima);
                 Console.ReadKey();
             }
             catch (Exception error)

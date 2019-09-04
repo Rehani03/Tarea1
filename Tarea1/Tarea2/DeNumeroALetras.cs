@@ -59,7 +59,7 @@ namespace Tareas.Tarea2
                     Console.WriteLine("Quince");
                     break;
                 case 16:
-                    Console.WriteLine("Dieciseis");
+                    Console.WriteLine("Dieciséis");
                     break;
                 case 17:
                     Console.WriteLine("Diecisiete");
@@ -71,10 +71,10 @@ namespace Tareas.Tarea2
                     Console.WriteLine("Diecinueve");
                     break;
                 case 20:
-                    Console.WriteLine("Vente");
+                    Console.WriteLine("Veinte");
                     break;
                 default:
-                    Console.WriteLine("Este numero aun no existe en este programa, por favor, espere nuevas actualizaciones :)");
+                    Console.WriteLine("Este número aun no existe en este programa, por favor, esperé nuevas actualizaciones :)");
                     break;
             }
         }

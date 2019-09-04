@@ -23,7 +23,7 @@ namespace Tareas.Tarea2
                 Console.Write("Ingrese la siguiente cadena:");
                 cadena2 = Console.ReadLine();
                 array.Add(cadena2);
-                Console.WriteLine("Las Cadenas Ordenadas son:\n\n ");
+                Console.WriteLine("Las Cadenas ordenadas son:\n\n ");
 
                 array.Sort();
                 foreach (String cadena in array)

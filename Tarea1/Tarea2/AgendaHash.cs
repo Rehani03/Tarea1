@@ -21,18 +21,18 @@ namespace Tareas.Tarea2
            
             try
             {
-                Console.WriteLine("Ingrese la cantidad de Personas a guardar en la agenda:");
+                Console.WriteLine("Ingresé la cantidad de Personas a guardar en la agenda:");
                 cantidad = Convert.ToInt32(Console.ReadLine());
                 for (int i = 0; i < cantidad; i++)
                 {
                     Console.Write("Nombre de la persona " +(i+1) +":");
                     nombre = Console.ReadLine();
-                    Console.Write("Numero de la persona " +(i+1) +":");
+                    Console.Write("Número de la persona " +(i+1) +":");
                     numero = Convert.ToDouble(Console.ReadLine());
                     agendaHash.Add(numero, nombre);
                 }
 
-                Console.WriteLine("\n\nLas personas y numeros guardados son:\n");
+                Console.WriteLine("\n\nLas personas y números guardados son:\n");
                 foreach (DictionaryEntry dato in agendaHash)
                 {
                     Console.WriteLine("{0}: {1}", dato.Key, dato.Value);

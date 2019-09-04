@@ -19,7 +19,7 @@ namespace Tareas.Tarea2
         public void ComienzoDeEstudiantes(int opcion)
         {
             //aqui pedimos la cantidad de salones
-            Console.Write("Ingrese la cantidad de Salones:");
+            Console.Write("Ingresé la cantidad de Salones:");
             numSalones = Convert.ToInt32(Console.ReadLine());
 
             double[][] calificaciones = new double[numSalones][];
@@ -27,7 +27,7 @@ namespace Tareas.Tarea2
             //aqui pedimos la cantidad de estudiantes por salon
             for (int i = 0; i < numSalones; i++)
             {
-                Console.Write("\nIngrese la cantidad de Estudiantes para el Salon {0}:", i + 1);
+                Console.Write("\nIngresé la cantidad de Estudiantes para el Salón {0}:", i + 1);
                 numEstudiantes = Convert.ToInt32(Console.ReadLine());
                 calificaciones[i] = new double[numEstudiantes];
             }
@@ -63,7 +63,7 @@ namespace Tareas.Tarea2
             {
                 for (int y = 0; y < numEstudiantes; y++)
                 {
-                    Console.Write("\nIngrese la calificacion del Estudiante " + (y + 1) + " del Salon " + (x + 1) +":");
+                    Console.Write("\nIngresé la calificación del Estudiante " + (y + 1) + " del Salón " + (x + 1) +":");
                     calificaciones[x][y] = Convert.ToDouble(Console.ReadLine());
                 }
             }
@@ -103,7 +103,7 @@ namespace Tareas.Tarea2
                     }
                 }
             }
-            Console.WriteLine("La calificaciones mas alta es:" + maximo);
+            Console.WriteLine("La calificación más alta es:" + maximo);
             Console.ReadKey();
         }
 
@@ -122,7 +122,7 @@ namespace Tareas.Tarea2
                     }
                 }
             }
-            Console.WriteLine("La calificaciones mas alta es:" + minimo);
+            Console.WriteLine("La calificación más alta es:" + minimo);
             Console.ReadKey();
         }
 
@@ -134,11 +134,11 @@ namespace Tareas.Tarea2
             {
                 for(int j = 0; j<calificaciones.GetLength(0); j++)
                 {
-                    Console.WriteLine("La Calificacion del Estudiante "+(j+1) +" del salon " +(i+1) +" es: "+calificaciones[i][j]);
+                    Console.WriteLine("La calificación del Estudiante "+(j+1) +" del salón " +(i+1) +" es: "+calificaciones[i][j]);
                 }
             }
 
-            Console.WriteLine("\n\nEstas calificaciones fueron pasados a un metodo y estaban en un arreglo Jagged :)");
+            Console.WriteLine("\n\nEstas calificaciones fueron pasados a un método y estaban en un arreglo Jagged :)");
             Console.ReadKey();
         }
     }
