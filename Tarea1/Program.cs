@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Tarea1.Tarea3;
 
 namespace Tareas
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            MenuTarea2();
-            
+            MenuTarea3();
+           
         }
 
         private static void MenuTarea1()
@@ -292,6 +294,14 @@ namespace Tareas
             }
             while (opcion != 12);
         
+        }
+
+        private static void MenuTarea3()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MenuTarea3Form());
+
         }
     }
 }

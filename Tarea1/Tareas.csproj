@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,9 +63,82 @@
     <Compile Include="Tarea2\Factorial.cs" />
     <Compile Include="Tarea2\FormatoFecha.cs" />
     <Compile Include="Tarea2\PromedioArrayList.cs" />
+    <Compile Include="Tarea3\DiseñoDeClaseInventario.cs" />
+    <Compile Include="Tarea3\UI\DiseñoInventarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\DiseñoInventarioForm.Designer.cs">
+      <DependentUpon>DiseñoInventarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Enumeracion.cs" />
+    <Compile Include="Tarea3\UI\EnumNeumaticosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\EnumNeumaticosForm.Designer.cs">
+      <DependentUpon>EnumNeumaticosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\UI\EscuelaRegistroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\EscuelaRegistroForm.Designer.cs">
+      <DependentUpon>EscuelaRegistroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\UI\EstructuraDueñoMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\EstructuraDueñoMascota.Designer.cs">
+      <DependentUpon>EstructuraDueñoMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\EstructuraEnlazadaMascosaDueño.cs" />
+    <Compile Include="Tarea3\EstructuraTienda.cs" />
+    <Compile Include="Tarea3\UI\EstructuraTiendaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\EstructuraTiendaForm.Designer.cs">
+      <DependentUpon>EstructuraTiendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\EstudianteEscuela.cs" />
+    <Compile Include="Tarea3\Excepciones.cs" />
+    <Compile Include="Tarea3\Factorial.cs" />
+    <Compile Include="Tarea3\MenuTarea3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\MenuTarea3.Designer.cs">
+      <DependentUpon>MenuTarea3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarea3\Poligono.cs" />
+    <Compile Include="Tarea3\UI\PoligonoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarea3\UI\PoligonoForm.Designer.cs">
+      <DependentUpon>PoligonoForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Tarea3\UI\DiseñoInventarioForm.resx">
+      <DependentUpon>DiseñoInventarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\UI\EnumNeumaticosForm.resx">
+      <DependentUpon>EnumNeumaticosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\UI\EscuelaRegistroForm.resx">
+      <DependentUpon>EscuelaRegistroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\UI\EstructuraDueñoMascota.resx">
+      <DependentUpon>EstructuraDueñoMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\UI\EstructuraTiendaForm.resx">
+      <DependentUpon>EstructuraTiendaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\MenuTarea3.resx">
+      <DependentUpon>MenuTarea3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarea3\UI\PoligonoForm.resx">
+      <DependentUpon>PoligonoForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
